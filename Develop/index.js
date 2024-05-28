@@ -1,28 +1,87 @@
 // TODO: Include packages needed for this application
-const thereadme = require('thereadme');
-thereadme.get('./MYENIGMA/README.md')
+const inquirer = require('inquirer');
 
-    .then(response => {
-    console.log('question:', response.questions);
-});
+const fs = require('fs');
+
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
+
 const questions = [
-    "What was your motivation?",
-    "Why did you build this project?",
-    "What problem does it solve?",
-    "What did you learn?",
-    "What makes your project stand out?",
+    {
+        type: "input",
+        message: "What is the title of your project?",
+        name: "title",
+    },
+    {
+        type: "input",
+        message: "Descrive your project?",
+        name: "description",
+    },
+    {
+        type: "input",
+        message: "Table of Contents ",
+        name: "table of contents",
+    },
+    {
+        type: "input",
+        message: "How do you install you project",
+        name: "Installation",
+    },
+    {
+        type: "input",
+        message: "What type of license does your project use?",
+        name: "license",
+    },
+    {
+        type: "input",
+        message: "Credits",
+        name: "contributing",
+    },
+
+    {
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email",
+    },
 ];
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    this.questions.pop();
-}
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, error => {
+            if (error) {
+                reject(error);
+                return;
+            }
+            resolve({
+                ok: true,
+                message: 'README File Generated!'
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
-    console.log('initialize app')
+    inquirer.prompt(questions)
+        .then(answers => {
+            console.log(answers);
+            return generateMarkdown(answers);
+        })
+        .then(pageMarkdown => {
+            writeToFile('README.md', pageMarkdown);
+            console.log('README.md made');
+        })
+        .catch((error) => {
+            console.log(error);
+        });
 }
 
 
