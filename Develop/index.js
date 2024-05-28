@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const thereadme = require('thereadme');
-thereadme.get('./enigma/README.md')
+thereadme.get('./MYENIGMA/README.md')
 
     .then(response => {
     console.log('question:', response.questions);
