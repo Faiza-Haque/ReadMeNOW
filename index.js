@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 
@@ -15,7 +15,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Descrive your project?",
+        message: "Describe your project?",
         name: "description",
     },
     {
@@ -25,12 +25,13 @@ const questions = [
     },
     {
         type: "input",
-        message: "How do you install you project",
-        name: "Installation",
+        message: "How do you install you project!",
+        name: "installation",
     },
     {
-        type: "input",
+        type: "list",
         message: "What type of license does your project use?",
+        choices: ["MIT","GPLv3", "GPL"],
         name: "license",
     },
     {
