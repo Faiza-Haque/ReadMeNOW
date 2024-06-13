@@ -18,14 +18,10 @@ const questions = [
         message: "Describe your project?",
         name: "description",
     },
+    
     {
         type: "input",
-        message: "Table of Contents ",
-        name: "table of contents",
-    },
-    {
-        type: "input",
-        message: "How do you install you project!",
+        message: "How do you install your project!",
         name: "installation",
     },
     {
@@ -77,7 +73,7 @@ function init() {
             return generateMarkdown(answers);
         })
         .then(pageMarkdown => {
-            writeToFile('README.md', pageMarkdown);
+            writeToFile('GeneratedReadMe.md', pageMarkdown);
             console.log('README.md made');
         })
         .catch((error) => {

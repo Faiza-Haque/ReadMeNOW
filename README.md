@@ -1,10 +1,10 @@
-# hi
+# ReadMeNOW
 
 ## Project Title
-hi
+ReadMeNOW
 
 ## Key Features
-hi
+This project generates a ReadMe for your code. 
 
 ## Table of Contents
 * [Project Title](#project-title)
@@ -14,14 +14,14 @@ hi
 * [License](#license)
 
 ## Install
-hi
+Run npm install and then node index to generate your readme file.
 
 ## Credits
-hi
+Faiza Haque
 
 ## License
-This application is covered by [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html).
+This application is covered by [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT).
 
 ## Questions
-[Link to my GitHub Profile](https://github.com/faiza)
-For questions, please reach out to me at hello
+[Link to my GitHub Profile](https://github.com/Faiza-Haque)
+For questions, please reach out to me at faizahaque90@gmail.com
