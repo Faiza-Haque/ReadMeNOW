@@ -73,7 +73,7 @@ function init() {
             return generateMarkdown(answers);
         })
         .then(pageMarkdown => {
-            writeToFile('GeneratedReadMe.md', pageMarkdown);
+            writeToFile('./output/README.md', pageMarkdown);
             console.log('README.md made');
         })
         .catch((error) => {
