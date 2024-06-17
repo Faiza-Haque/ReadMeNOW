@@ -3,5 +3,3 @@ Generated ReadMe successfully!
 
 ![alt text](image.png) 
 
-
-
