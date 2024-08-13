@@ -1,23 +1,27 @@
-# ReadMeNOW
+# ReadMe Generator
 
 ## Project Title
-ReadMeNOW
+ReadMe Generator
 
 ## Key Features
-This is the ReadMeNOW description
+This projects helps you generate a ReadMe for all of your applications!
 
 ## Table of Contents
 * [Project Title](#project-title)
 * [Key Features](#key-features)
 * [Install](#install)
-* [Credits](#credits)
+* [Usage](#usage)
+* [Contributions](#contributions)
 * [License](#license)
 
 ## Install
-npm i and then npm start
+Run npm install to install the package
 
-## Credits
-Mark and Thinh
+## Usage
+Run node.js for this project
+
+## Contributions
+Joem and Mark Carlson
 
 ## License
 This application is covered by [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT).

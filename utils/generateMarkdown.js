@@ -129,13 +129,17 @@ ${data.description}
 * [Project Title](#project-title)
 * [Key Features](#key-features)
 * [Install](#install)
-* [Credits](#credits)
+* [Usage](#usage)
+* [Contributions](#contributions)
 * [License](#license)
 
 ## Install
 ${data.installation}
 
-## Credits
+## Usage
+${data.usage}
+
+## Contributions
 ${data.contributing}
 
 ## License

@@ -32,7 +32,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "Credits",
+        message: "What is the usage of the project?",
+        name: "usage",
+    },
+    {
+        type: "input",
+        message: "Contributions",
         name: "contributing",
     },
 
@@ -46,6 +51,7 @@ const questions = [
         message: "What is your email address?",
         name: "email",
     },
+    
 ];
 
 
